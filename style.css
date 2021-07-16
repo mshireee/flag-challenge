@@ -1,0 +1,47 @@
+section {
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+}
+
+div {
+    height: 600px;
+    width: 300px;
+}
+
+.black {
+    background-color: black;
+}
+
+.yellow {
+    background-color: yellow;
+}
+
+.red {
+    background-color: red;
+}
+
+@media screen and (max-width: 900px) {
+    section {
+        display: flex;
+        flex-direction: column;
+        flex-wrap: wrap;
+    }
+
+    div {
+        height: 100px;
+        width: 500px;
+    }
+
+    .black {
+        order: 1;
+    }
+
+    .red {
+        order: 2;
+    }
+
+    .yellow {
+        order: 3;
+    } 
+}
